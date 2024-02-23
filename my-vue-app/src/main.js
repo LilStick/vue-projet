@@ -3,6 +3,9 @@ import App from "./App.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomePages from "./pages/HomePages.vue";
 import LoginPages from "./pages/LoginPages.vue";
+import ContactPages from "./pages/ContactPages.vue";
+import QuiSommesNousPages from "./pages/QuiSommesNousPages.vue";
+import Error404Pages from "./pages/Error404Pages.vue";
 
 const routes = [
   {
@@ -14,6 +17,21 @@ const routes = [
     path: "/login",
     name: "Login",
     component: LoginPages,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: ContactPages,
+  },
+  {
+    path: "/quisommesnous",
+    name: "QuiSommesNous",
+    component: QuiSommesNousPages,
+  },
+  {
+    path: "/error404pages",
+    name: "Error404Pages",
+    component: Error404Pages,
   },
 ];
 
